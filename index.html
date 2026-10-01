@@ -1,0 +1,240 @@
+<!doctype html><html lang="sk"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>NAJ kaderníctvo · kaderníctvo v Považskej Bystrici — neoficiálny návrh</title>
+<meta name="description" content="Neoficiálny návrh homepage pre NAJ kaderníctvo, Šoltésovej 421/4, Považská Bystrica. Hodnotenie 9,8/10 na Orly Kaderníctva.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Ultra&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F3EEED;   /* zem: svetlá ružovošedá */
+  --paper-2:#E7DEDB;
+  --step-l:#DED2CE;
+  --step-r:#D0C1BC;
+  --ink:#26181D;
+  --ink-soft:#5E4A51;
+  --wine:#571A2C;    /* tabuľa: farba farbených vlasov */
+  --wine-2:#6C2439;
+  --gold:#D8B05A;    /* akcent: zlaté písmo na tabuli */
+  --rule:rgba(38,24,29,.18);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;background:var(--ink)}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 18px/1.62 Lora,Georgia,serif}
+img{max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.c{max-width:1140px;margin:0 auto;padding:0 36px}
+.k{font-family:Lora,serif;font-size:12.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase}
+.fig{font-variant-numeric:tabular-nums lining-nums}
+
+.bar{background:var(--ink);color:#F1E7E9;font-size:14px;line-height:1.45;padding:9px 0}
+.bar p{margin:0}
+
+.head{display:flex;align-items:center;gap:30px;min-height:80px;border-bottom:1px solid var(--rule)}
+.logo{display:flex;align-items:baseline;gap:12px;text-decoration:none;margin-right:auto}
+.logo b{font:400 34px/1 Ultra,serif;letter-spacing:.02em;color:var(--wine)}
+.logo i{font-size:16px;color:var(--ink-soft)}
+.head nav{display:flex;gap:26px}
+.ul{text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .2s}
+.ul:hover{background-size:100% 1px}
+.head nav a{font-size:16.5px}
+.go{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;background:var(--wine);color:#fff;text-decoration:none;font:500 16px/1 Lora,serif;border-radius:2px;transition:background .2s}
+.go:hover{background:var(--wine-2)}
+.go.alt{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.go.alt:hover{background:var(--ink);color:#fff}
+
+/* titul */
+.title{padding-top:60px}
+.tg{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:56px;align-items:end}
+.title .k{color:var(--wine);margin:0 0 16px}
+h1{margin:0;font:400 clamp(44px,6.2vw,80px)/1 Ultra,serif;letter-spacing:-.005em}
+h1 span{color:var(--wine)}
+.about{margin:0;font-size:18.5px;line-height:1.6}
+.about cite{display:block;margin-top:10px;font-size:14px;font-style:normal;color:var(--ink-soft)}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+
+/* podium */
+.podium{padding-top:64px}
+.pod{display:grid;grid-template-columns:1fr 1.25fr 1fr;align-items:end;gap:0;border-bottom:3px solid var(--ink)}
+.step{position:relative;padding:26px 28px 30px}
+.step .k{font-size:11.5px;color:var(--ink-soft);display:block;margin-bottom:12px}
+.step strong{display:block;font:400 46px/1 Ultra,serif}
+.step strong small{font:400 20px/1 Lora,serif;margin-left:4px}
+.step p{margin:10px 0 0;font-size:15.5px;line-height:1.5;color:var(--ink-soft)}
+.left{background:var(--step-l);min-height:260px}
+.right{background:var(--step-r);min-height:190px}
+.champ{background:var(--wine);color:#F7EDEF;min-height:430px;padding:16px;display:flex}
+.board{flex:1;border:1px solid rgba(216,176,90,.7);outline:1px solid rgba(216,176,90,.35);outline-offset:-8px;padding:30px 30px 28px;display:flex;flex-direction:column;justify-content:space-between;text-align:left}
+.board .k{color:var(--gold);font-size:12px}
+.big{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:18px 0 6px}
+.big b{font:400 clamp(120px,15vw,184px)/.8 Ultra,serif;color:var(--gold);letter-spacing:-.02em}
+.big span{font-size:24px;color:#F0DFE3}
+.board p{margin:0;font-size:16px;line-height:1.5;color:#E8D5DA}
+.board p b{font-weight:600;color:#fff}
+.pod-note{margin:14px 0 0;font-size:14px;color:var(--ink-soft)}
+
+/* služby */
+.serv{padding-top:96px;padding-bottom:90px}
+.serv-h{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:end;margin-bottom:48px}
+.serv h2,.find h2{margin:0;font:400 clamp(36px,4.4vw,54px)/1.02 Ultra,serif}
+.serv-h p{margin:0;color:var(--ink-soft);font-size:17px}
+.stairs{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:end;border-bottom:1px solid var(--rule)}
+.stairs li{border-top:3px solid var(--ink);padding:22px 26px 30px 0}
+.stairs li+li{padding-left:26px;border-left:1px solid var(--rule)}
+.stairs li:nth-child(1){margin-bottom:0}
+.stairs li:nth-child(2){margin-bottom:0;padding-top:70px}
+.stairs li:nth-child(3){padding-top:118px}
+.stairs em{display:block;font-size:clamp(26px,2.7vw,34px);line-height:1.15;font-style:italic}
+.stairs .k{display:block;color:var(--wine);font-size:11.5px;margin-bottom:12px}
+.demo{margin:30px 0 0;padding:18px 22px;background:var(--paper-2);font-size:15.5px;line-height:1.55;border-left:0}
+.demo b{font-weight:600}
+
+/* kontakt */
+.find{background:var(--ink);color:#F1E7E9;padding:88px 0 96px}
+.fg{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:64px;align-items:start}
+.find h2{color:#fff;margin-bottom:22px}
+.find .addr{font-size:22px;line-height:1.45;margin:0 0 22px}
+.find .go{background:var(--gold);color:var(--ink)}
+.find .go:hover{background:#E6C47A}
+.rows{margin:0;border-top:1px solid rgba(241,231,233,.22)}
+.rows div{display:grid;grid-template-columns:170px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid rgba(241,231,233,.22);align-items:baseline}
+.rows dt{color:var(--gold)}
+.rows dd{margin:0;font-size:17px}
+.rows dd a{display:inline-flex;min-height:44px;align-items:center}
+.rows small{display:block;color:#C7B3B9;font-size:14px;line-height:1.5}
+
+footer{background:var(--ink);color:#B9A3AA;border-top:1px solid rgba(241,231,233,.14);padding:24px 0 28px;font-size:14px}
+footer .c{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.mob{display:none}
+
+@media (max-width:980px){
+  .tg,.serv-h,.fg{grid-template-columns:1fr;gap:28px}
+  .head nav{display:none}
+  .pod{grid-template-columns:1fr 1.4fr 1fr}
+  .step{padding:20px 18px 24px}
+  .board{padding:22px 20px}
+}
+@media (max-width:700px){
+  body{font-size:17px}
+  .c{padding:0 18px}
+  .head{min-height:66px;gap:12px}
+  .logo b{font-size:30px}
+  .logo i{font-size:14px}
+  .head .go{display:none}
+  .title{padding-top:36px}
+  h1{font-size:44px}
+  .btns .go{flex:1 1 auto}
+  .podium{padding-top:44px}
+  .pod{grid-template-columns:1fr 1.4fr 1fr}
+  .step{padding:14px 10px 16px}
+  .step .k{font-size:10px;letter-spacing:.12em;margin-bottom:8px}
+  .champ{min-height:290px;padding:6px}
+  .board{padding:14px 12px 14px;outline-offset:-5px}
+  .board .k{font-size:10px;letter-spacing:.12em}
+  .big{margin:10px 0 4px;gap:4px}
+  .big b{font-size:62px}
+  .big span{font-size:15px}
+  .board p{font-size:13.5px}
+  .more{display:none}
+  .left{min-height:200px}
+  .right{min-height:150px}
+  .step strong{font-size:28px}
+  .step strong small{display:block;margin:4px 0 0;font-size:14px}
+  .step p{font-size:13px;margin-top:6px}
+  .serv{padding-top:64px;padding-bottom:60px}
+  .stairs{grid-template-columns:1fr}
+  .stairs li,.stairs li+li{padding:18px 0 22px;border-left:0}
+  .stairs li:nth-child(2){padding-left:14%}
+  .stairs li:nth-child(3){padding-top:18px;padding-left:28%}
+  .find{padding:64px 0 70px}
+  .rows div{grid-template-columns:1fr;gap:2px}
+  footer{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
+  .mob{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--paper);border-top:1px solid var(--rule);padding:10px 16px calc(10px + env(safe-area-inset-bottom))}
+  .mob .go{min-height:50px;padding:0 10px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="bar"><div class="c"><p>Neoficiálny návrh — nie je to oficiálny web podniku · ukážka od webdavid.sk, objednávky ani rezervácie tu nefungujú</p></div></div>
+
+<header class="c head">
+  <a class="logo" href="#top" aria-label="NAJ kaderníctvo — na začiatok"><b>NAJ</b><i>kaderníctvo</i></a>
+  <nav aria-label="Hlavná navigácia"><a class="ul" href="#hodnotenie">Hodnotenie</a><a class="ul" href="#sluzby">Služby</a><a class="ul" href="#kontakt">Kontakt</a></nav>
+  <a class="go" href="https://www.orlykadernictva.eu/profile-333-naj-kadernictvo-povazska-bystrica" rel="noopener" target="_blank">Profil na Orly</a>
+</header>
+
+<main id="top">
+  <section class="title c" aria-labelledby="h1">
+    <div class="tg">
+      <div>
+        <p class="k">Kaderníctvo · Považská Bystrica</p>
+        <h1 id="h1"><span>NAJ</span> kaderníctvo</h1>
+      </div>
+      <div>
+        <p class="about">„V centre mesta Považská Bystrica, konkrétne na Šoltésovej 421/4, sa nachádza NAJ kaderníctvo, známe svojím profesionálnym prístupom k vlasovej starostlivosti.“<cite>— z profilu na Orly Kaderníctva</cite></p>
+        <div class="btns">
+          <a class="go" href="https://www.orlykadernictva.eu/profile-333-naj-kadernictvo-povazska-bystrica" rel="noopener" target="_blank">Profil na Orly</a>
+          <a class="go alt" href="https://www.facebook.com/2226204614322062" rel="noopener" target="_blank">Facebook</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="podium c" id="hodnotenie" aria-labelledby="hod-h">
+    <h2 id="hod-h" class="k" style="margin:0 0 18px;color:var(--ink-soft)">Hodnotenia podľa profilu na Orly Kaderníctva · 1. 10. 2026</h2>
+    <div class="pod">
+      <div class="step left">
+        <span class="k">Facebook</span>
+        <strong class="fig">4,9<small>/ 5</small></strong>
+        <p>63 hodnotení</p>
+      </div>
+      <div class="champ">
+        <div class="board">
+          <span class="k">Orly Kaderníctva</span>
+          <div class="big"><b class="fig">9,8</b><span>z 10</span></div>
+          <p><b>69 hodnotení</b><span class="more"> · celkové hodnotenie kaderníctva na portáli Orly Kaderníctva.</span></p>
+        </div>
+      </div>
+      <div class="step right">
+        <span class="k">Ďalšie hodnotenie</span>
+        <strong class="fig">5,0<small>/ 5</small></strong>
+        <p>6 hodnotení</p>
+      </div>
+    </div>
+    <p class="pod-note">Súhrnné čísla z profilu, bez textov recenzií. Pred zverejnením overiť.</p>
+  </section>
+
+  <section class="serv c" id="sluzby" aria-labelledby="sluzby-h">
+    <div class="serv-h">
+      <h2 id="sluzby-h">Strih, farba, rada</h2>
+      <p>Tri veci, ktoré o kaderníctve píše jeho profil. Slovami zo zdroja:</p>
+    </div>
+    <ul class="stairs">
+      <li><span class="k">Strihanie</span><em>„precízne strihanie“</em></li>
+      <li><span class="k">Farbenie</span><em>„moderné farbenie“</em></li>
+      <li><span class="k">Poradenstvo</span><em>„personalizované poradenstvo“</em></li>
+    </ul>
+    <p class="demo"><b>Ukážka návrhu:</b> cenník, fotky prác a otváracie hodiny doplní kaderníctvo. Na verejných profiloch zatiaľ nie sú.</p>
+  </section>
+
+  <section class="find" id="kontakt" aria-labelledby="kontakt-h">
+    <div class="c fg">
+      <div>
+        <h2 id="kontakt-h">Kde nás nájdete</h2>
+        <p class="addr">Šoltésovej 421/4<br>017 01 Považská Bystrica</p>
+        <a class="go" href="https://www.google.com/maps/search/NAJ+kadern%C3%ADctvo+Pova%C5%BEsk%C3%A1+Bystrica" rel="noopener" target="_blank">Otvoriť v Mapách Google</a>
+      </div>
+      <dl class="rows">
+        <div><dt class="k">Termín</dt><dd><a class="ul" href="https://www.orlykadernictva.eu/profile-333-naj-kadernictvo-povazska-bystrica" rel="noopener" target="_blank">Kontakt cez profil na Orly</a><small>Telefón je na profile skrytý, preto ho tu neuvádzame — overiť.</small></dd></div>
+        <div><dt class="k">Hodiny</dt><dd>Zatiaľ neuvedené<small>Na zdrojoch nie sú — doplní kaderníctvo.</small></dd></div>
+        <div><dt class="k">Facebook</dt><dd><a class="ul" href="https://www.facebook.com/2226204614322062" rel="noopener" target="_blank">Stránka na Facebooku</a></dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer><div class="c"><span>Neoficiálny návrh webu · webdavid.sk · 2026</span><span>NAJ kaderníctvo · Šoltésovej 421/4, Považská Bystrica</span></div></footer>
+
+<div class="mob"><a class="go" href="https://www.orlykadernictva.eu/profile-333-naj-kadernictvo-povazska-bystrica" rel="noopener" target="_blank">Profil na Orly</a><a class="go alt" href="https://www.facebook.com/2226204614322062" rel="noopener" target="_blank">Facebook</a></div>
